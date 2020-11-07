@@ -15,6 +15,7 @@
     "cypress": "^5.5.0",
     "cypress-cucumber-preprocessor": "^4.0.0",
     "cypress-multi-reporters": "^1.4.0",
+    "cypress-xpath": "^1.6.1",
     "eslint": "^7.13.0",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-cypress": "^2.11.2",
@@ -25,6 +26,6 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions":"cypress/features"
+    "stepDefinitions": "cypress/features"
   }
 }
