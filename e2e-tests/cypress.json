@@ -2,6 +2,7 @@
   "testFiles": "**/*.feature",
   "ignoreTestFiles": ["*.ts"],
   "integrationFolder": "cypress/features",
+  "baseUrl": "http://automationpractice.com",
   "video": true,
   "viewportWidth": 1280,
   "viewportHeight": 720,
