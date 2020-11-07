@@ -1,4 +1,4 @@
-cypress/results/*
-cypress/reports/*
-cypress/screenshots/*
-cypress/videos/*
+e2e-tests/results/
+e2e-tests/cypress/screenshots
+e2e-tests/cypress/videos/
+node_modules
