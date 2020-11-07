@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": ["es6", "dom"],
+      "types": ["cypress", "node"]
+    },
+    "include": [
+      "cypress/**/**/*.ts",
+      "**/*.ts"   
+, "cypress/plugins/index.ts", "cypress/support/index.ts"      ]
+}

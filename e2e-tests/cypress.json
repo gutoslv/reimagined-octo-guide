@@ -1,0 +1,17 @@
+{
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.ts"],
+  "integrationFolder": "cypress/features",
+  "video": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "chromeWebSecurity": false,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "retries": {
+    "runMode": 3,
+    "openMode": 3
+  }
+}
