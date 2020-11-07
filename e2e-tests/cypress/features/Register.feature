@@ -1,3 +1,4 @@
+@register
 Feature: Register a new user
 
     As an user from the website
