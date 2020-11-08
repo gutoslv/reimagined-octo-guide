@@ -7,12 +7,13 @@ This repo is an example of automation using Cypress and Cucumber preprocessor
 - Yarn Classic
 - Node
 
-#Environment Variable
+# Environment Variable
+
 To not expose sensitive and personal information, the username/email and password are stored into environment variables, and not hard-coded. This also allows the code to be ran into multiple pipelines and different environments.
 
 To set environment variables that works with Cypress please check the [Cypress Docs](https://docs.cypress.io/guides/guides/environment-variables.html) I do recommend using the [cypress.env.json option](https://docs.cypress.io/guides/guides/environment-variables.html#Option-2-cypress-env-json) to test locally
 
-#Running the tests
+# Running the tests
 
 To run the tests you need to:
 
