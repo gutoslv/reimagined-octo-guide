@@ -1,9 +1,5 @@
 import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
 
-Given('they are into the Authentication page', () => {
-  cy.visit('/index.php?controller=authentication&back=my-account');
-});
-
 Given('they fill the email address to create an account with a new {string}', (email: string) => {
   email = Cypress.env('user_register_email');
   cy.fillInput('#email_create', email);
@@ -71,10 +67,6 @@ When(
 
 When('click on register button', () => {
   cy.clickElement('#submitAccount');
-});
-
-Then('they should be redirected to the My account page', () => {
-  cy.url().should('contain', 'controller=my-account');
 });
 
 Then(

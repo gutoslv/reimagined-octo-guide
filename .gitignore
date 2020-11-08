@@ -2,3 +2,4 @@ e2e-tests/results/
 e2e-tests/cypress/screenshots
 e2e-tests/cypress/videos/
 node_modules
+cypress.env.json
