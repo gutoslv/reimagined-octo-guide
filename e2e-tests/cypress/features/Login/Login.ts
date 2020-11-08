@@ -14,6 +14,6 @@ When('they fill the login form with a valid email and invalid password', () => {
   cy.fillInput('#passwd', 'randompassdword');
 });
 
-Then('they should see a error message informing that the password is invalid', () => {
-  cy.verifyText('ol > li', 'Authentication failed.');
+Then('they should see the message {string}', (errorMessage: string) => {
+  cy.verifyText('ol > li', errorMessage);
 });

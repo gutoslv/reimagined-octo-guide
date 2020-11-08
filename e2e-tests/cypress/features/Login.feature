@@ -15,4 +15,4 @@ Feature: Login
     Scenario: Login with wrong password
         When they fill the login form with a valid email and invalid password
         And click on the sign in button
-        Then they should see a error message informing that the password is invalid
+        Then they should see the message "Authentication failed."
