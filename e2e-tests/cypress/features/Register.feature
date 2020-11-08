@@ -13,7 +13,7 @@ Feature: Register a new user
         And they fill the address information form with valid "<first name>", "<last name>", "<address1>", "<city>", "<state>", "<zip code>", "<country>", "<mobile phone>"
         And click on register button
         Then they should be redirected to the My account page
-        And they should see their <first name> and <last name> into the menu
+        And they should see their "<first name>" and "<last name>" into the menu
 
         Examples:
             | email              | title | first name | last name | password | day of birth | month of birth | year of birth | address1       | city         | state   | zip code | country       | mobile phone |
