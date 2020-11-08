@@ -15,5 +15,6 @@
   "retries": {
     "runMode": 3,
     "openMode": 3
-  }
+  },
+  "watchForFileChanges": false
 }

@@ -24,3 +24,25 @@ Cypress.Commands.add('fillInput', (selector, text) => {
 Cypress.Commands.add('selectDropdown', (selector, value) => {
   cy.get(selector).select(value);
 });
+
+Cypress.Commands.add('loginByApi', (user, password) => {
+  cy.request({
+    method: 'POST',
+    url: '/index.php?controller=authentication',
+    form: true,
+    body: {
+      email: user,
+      passwd: password,
+      back: 'my-account',
+      SubmitLogin: '',
+    },
+  });
+});
+
+Cypress.Commands.add('hoverElement', (selector) => {
+  cy.get(selector).trigger('mouseover');
+});
+
+Cypress.Commands.add('verifyCheckboxNotChecked', (selector) => {
+  cy.get(selector).should('not.be.checked');
+});
